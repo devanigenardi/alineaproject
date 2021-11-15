@@ -1,0 +1,70 @@
+// -----------------------------------------------------------------------------
+// home page
+// -----------------------------------------------------------------------------
+#home-page {
+    background-color: $white;
+    .home-header-container {
+        position: relative;
+
+        .header-pined {
+            position: fixed;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            background-image: url('../img/home_hero.jpg');
+            background-size: cover;
+            height: 100vh;
+            max-width: $max-width;
+            margin: auto;
+            width: 100%;
+            z-index: -1;
+
+        }
+
+        .head-flourish {
+            top: 0px;
+            left: 0px;
+            height: 100vh;
+            width: 100%;
+
+        }
+
+    }
+    
+
+    .grayBG {
+        background-color: $gray;
+    }
+
+    .cards {
+        @include container-width-alt;
+        section {
+            & > div {
+                margin: 0 auto;
+                padding: 60px;
+                max-width: 1126px;
+            }
+        }
+    }
+
+    .footer {
+        @include container-width-alt;
+        background-color: $gray;
+        section {
+            width: 100%;
+            max-width: $max-width;
+            .wst-dll {
+                background-color: $white;
+                margin-bottom: 0px;
+                padding-bottom: 60px;
+            }
+            .terms {
+                a {
+                    margin-bottom: 0;
+                    padding-bottom: 1em;
+                }
+            }
+        }
+    }
+    
+}
