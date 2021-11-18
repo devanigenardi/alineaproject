@@ -144,7 +144,9 @@
             background-color: #00175A;
             margin: -260px 0 0 auto;
             @media (max-width: 767px) {
-                margin: 30px 0;
+                height: 196px;
+                max-width: 300px;
+                margin: 30px auto 0;
             }
         }
     }

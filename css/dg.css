@@ -219,12 +219,7 @@ section {
 		transition: transform .25s;
 	}
 
-.head-flourish {
-	display: flex;
-	align-items: center;
-	position: relative;
-	margin-bottom: var(--sectionBottom);
-}
+
 
 .hf-subhead { color: #CBCBCB; text-transform: uppercase; font-weight: 700; margin-bottom: 4px; font-size: calc(1.9rem * .625);}
 .hf-head { color: #fff; font-size: calc(4.5rem * .625); font-weight: 700; text-transform: uppercase;display: block; }
@@ -1149,8 +1144,6 @@ strong.gew { font-weight: 500; }
 @media all and (max-width: 500px) {
 	.sec100M { width: 100%; position: relative; }
 
-	.head-flourish { height: 125px; }
-	.head-flourish:before { height: 125px; width: 100%; background-size: contain; background-position: 0 100%; }
 	.hf-text { margin-bottom: 20px; }
 	.hf-head { max-width: 270px;font-size: calc(3rem * .625); }
 	.hf-subhead { font-size: calc(1.2rem * .625); }
