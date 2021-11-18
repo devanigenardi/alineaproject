@@ -661,6 +661,160 @@ a {
   margin-bottom: 20px;
 }
 
+.content-columns .slab {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .content-columns .slab {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.content-columns .slab > div {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .content-columns .slab > div {
+    width: 100%;
+    max-width: 475px;
+  }
+}
+
+.content-columns .slab > div img {
+  width: 100%;
+}
+
+.content-columns .slab.slab-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+@media (max-width: 767px) {
+  .content-columns .slab.slab-reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.content-columns .slab .gray-box-container {
+  padding: 0 20px;
+}
+
+.gray-box-sm {
+  padding: 25px 35px 35px;
+  width: 100%;
+  max-width: 520px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .gray-box-sm {
+    margin-top: -65px;
+    max-width: 335px;
+  }
+}
+
+.gray-box-sm h3 {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #ffffff;
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  .gray-box-sm h3 {
+    font-size: 20px;
+  }
+}
+
+.gray-box-sm p {
+  margin: 35px 0 25px;
+  color: #333333;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.gray-box-sm a {
+  color: #006FCF;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.gray-box-sm::before {
+  content: '';
+  height: 65px;
+  width: calc(100%);
+  position: absolute;
+  background-color: #757679;
+  left: 0px;
+  right: -35px;
+  top: 0px;
+}
+
+@media (max-width: 767px) {
+  .gray-box-sm::before {
+    background-color: rgba(117, 118, 121, 0.8);
+  }
+}
+
+#home-page .cards, #fund-your-account .cards {
+  max-width: 1550px;
+  margin: 0 auto;
+}
+
+#home-page .cards section .three-cols, #fund-your-account .cards section .three-cols {
+  margin: 0 auto;
+  padding: 60px 0;
+  max-width: 1126px;
+}
+
+#home-page .cards section .three-cols .benefit-category, #fund-your-account .cards section .three-cols .benefit-category {
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  #home-page .cards section .three-cols, #fund-your-account .cards section .three-cols {
+    padding: 0 0 30px;
+  }
+}
+
 #home-page {
   background-color: #ffffff;
 }
@@ -871,23 +1025,6 @@ a {
   padding: 60px 0;
   border-top: none;
   border-bottom: 1px solid #CBCBCB;
-}
-
-#home-page .cards {
-  max-width: 1550px;
-  margin: 0 auto;
-}
-
-#home-page .cards section .three-cols {
-  margin: 0 auto;
-  padding: 60px 0;
-  max-width: 1126px;
-}
-
-@media (max-width: 767px) {
-  #home-page .cards section .three-cols {
-    padding: 0 0 30px;
-  }
 }
 
 #home-page .footer {

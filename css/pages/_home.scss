@@ -160,20 +160,6 @@
         }
     }
 
-    .cards {
-        @include container-width-alt;
-        section {
-            .three-cols {
-                margin: 0 auto;
-                padding: 60px 0;
-                max-width: 1126px;
-                @media (max-width: 767px) {
-                    padding: 0 0 30px;
-                }
-            }
-        }
-    }
-
     .footer {
         @include container-width-alt;
         background-color: $gray;
