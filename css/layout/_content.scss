@@ -3,3 +3,36 @@
         max-width: $max-width;
     }
 }
+
+.standard-title {
+    max-width: 1126px;
+    width: 100%;
+    border-bottom: 1px solid #333333;
+    margin: 0 auto;
+    @media (max-width: 767px) {
+        padding: 0 0 30px;
+        margin-bottom: 30px;
+    }
+    p {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 28px;
+        color: #333333;
+        text-transform: uppercase;
+        text-align: center;
+        @media (max-width: 767px) {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+    &.standard-title-alt {
+        padding-top: 60px;
+        @media (max-width: 767px) {
+            padding: 30px 0 30px;
+        }
+    } 
+}
+
+.sm-content-width {
+    @include container-width-sm;
+}

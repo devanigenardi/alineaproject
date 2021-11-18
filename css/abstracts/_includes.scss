@@ -1,4 +1,9 @@
 @mixin container-width-alt {
     max-width: $max-width-alt;
     margin: 0 auto;
-  }
+}
+
+@mixin container-width-sm {
+  max-width: $max-width-sm;
+  margin: 0 auto;
+}
