@@ -2,10 +2,13 @@
   .shadowBG {
     position: relative;
     margin: 80px 0 60px;
-    background-color: red;
+    background-image: url('/img/world_service_tile.svg');
+    background-repeat: repeat;
+    background-color: $white;
+    background-size: 15%;
 
     .blueBG {
-      max-width: 90%;
+      max-width: 93.5%;
       color: $white;
       @media (max-width: 767px) {
         max-width: 100%;

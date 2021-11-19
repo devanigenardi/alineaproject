@@ -15,3 +15,32 @@
         display: block;
     }
 }
+
+.link-arrow-sm {
+    position: relative;
+    &::after {
+        content: '';
+        background-image: url('/img/arrow-blue.svg');
+        background-size: cover;
+        position: absolute;
+        margin: auto;
+        width: 6px;
+        height: 11px;
+        top: 0px;
+        bottom: 0px;
+        right: -10px;
+        transition: 0.5s all ease-in-out;
+    }
+    &:hover::after {
+        transform: translate(6px,0px);
+        transition: 0.3s all ease-in-out;
+    }
+    &.link-arrow-sm-alt {
+        &::after {
+            background-image: url('/img/arrow-white.svg');
+            top: 6px;
+            margin: initial;
+            height: 10px;
+        }
+    }
+}
