@@ -438,6 +438,17 @@ a {
   }
 }
 
+.standard-title.standard-title-wide {
+  padding-top: 60px;
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .standard-title.standard-title-wide {
+    padding: 30px 0 30px;
+  }
+}
+
 .sm-content-width {
   max-width: 1126px;
   margin: 0 auto;
@@ -805,14 +816,139 @@ a {
   max-width: 1126px;
 }
 
-#home-page .cards section .three-cols .benefit-category, #fund-your-account .cards section .three-cols .benefit-category {
-  height: auto;
-}
-
 @media (max-width: 767px) {
   #home-page .cards section .three-cols, #fund-your-account .cards section .three-cols {
     padding: 0 0 30px;
   }
+}
+
+#home-page .cards section .three-cols.three-cols-alt .benefit-category, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category {
+  height: auto;
+}
+
+#home-page .cards section .three-cols.three-cols-alt .benefit-category .bc-head, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category .bc-head {
+  padding: 5px;
+}
+
+#home-page .cards section .three-cols.three-cols-alt .benefit-category.active, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category.active {
+  border: 1px solid rgba(0, 111, 207, 0.25);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#home-page .cards section .three-cols.three-cols-alt .benefit-category.active .bc-head, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category.active .bc-head {
+  background-image: none;
+  background-color: #f7f7f7;
+  font-family: "Guardian Egyp";
+  font-size: 20px;
+  line-height: 24px;
+  color: #006FCF;
+}
+
+#home-page .cards section .three-cols.three-cols-alt .benefit-category.active .bc-head .bc-arrow, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category.active .bc-head .bc-arrow {
+  height: 18px;
+  width: 10px;
+}
+
+.blueBG {
+  background: #006FCF;
+  padding: 4px 10px 10px 10px;
+  position: relative;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  min-height: 200px;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.shadowBG {
+  position: relative;
+  margin: 80px 0 60px;
+  background-color: red;
+}
+
+.shadowBG .blueBG {
+  max-width: 90%;
+}
+
+.shadowBG .blueBG .inner-border {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#006FCF), to(#006FCF)), -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#FFF)), -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#FFF)), -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#FFF)), -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#FFF)), -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#FFF));
+  background-image: linear-gradient(#006FCF, #006FCF), linear-gradient(#FFF, #FFF), linear-gradient(#FFF, #FFF), linear-gradient(#FFF, #FFF), linear-gradient(#FFF, #FFF), linear-gradient(#FFF, #FFF);
+  background-repeat: no-repeat;
+  background-position: 50% 0px, 2px 2px, calc(100% - 3px) 2px, calc(100% - 2px) 2px, 2px calc(100% - 2px), 2px 2px;
+  background-size: calc(100% - 5px) 2px, calc(50% - 32px) 1px, calc(50% - 34px) 1px, 1px calc(100% - 4px), calc(100% - 4px) 1px, 1px calc(100% - 4px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+
+.shadowBG .blueBG .half-circle {
+  width: 60px;
+  height: 30px;
+  background-color: #006FCF;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border: 1px solid #fff;
+  border-bottom: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin: -4px auto 0 auto;
+  position: relative;
+  z-index: 3;
+}
+
+.shadowBG .blueBG .icon-circle {
+  width: 56px;
+  height: 56px;
+  background: white;
+  border-radius: 30px;
+  margin: -59px auto 0 auto;
+  position: relative;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shadowBG .blueBG .icon-circle svg {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.shadowBG .blueBG h3 {
+  text-align: center;
+  font-family: serif;
+  font-size: 24px;
+  color: #fff;
+  font-weight: normal;
+  margin: .5em 0 0 0;
+}
+
+.shadowBG .icon-circle-shadow {
+  content: '';
+  width: 56px;
+  height: 56px;
+  border-radius: 30px;
+  position: absolute;
+  top: -26px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 #home-page {
