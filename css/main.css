@@ -922,38 +922,38 @@ a {
   }
 }
 
-#home-page .cards, #fund-your-account .cards, .get-set-up .cards {
+#home-page .cards, #fund-your-account .cards, #get-set-up .cards, #spend-and-earn .cards {
   max-width: 1550px;
   margin: 0 auto;
 }
 
-#home-page .cards section .three-cols, #fund-your-account .cards section .three-cols, .get-set-up .cards section .three-cols {
+#home-page .cards section .three-cols, #fund-your-account .cards section .three-cols, #get-set-up .cards section .three-cols, #spend-and-earn .cards section .three-cols {
   margin: 0 auto;
   padding: 30px 0 60px;
   max-width: 1126px;
 }
 
 @media (max-width: 767px) {
-  #home-page .cards section .three-cols, #fund-your-account .cards section .three-cols, .get-set-up .cards section .three-cols {
+  #home-page .cards section .three-cols, #fund-your-account .cards section .three-cols, #get-set-up .cards section .three-cols, #spend-and-earn .cards section .three-cols {
     padding: 0 0 30px;
   }
 }
 
-#home-page .cards section .three-cols.three-cols-alt .benefit-category, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category, .get-set-up .cards section .three-cols.three-cols-alt .benefit-category {
+#home-page .cards section .three-cols.three-cols-alt .benefit-category, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category, #get-set-up .cards section .three-cols.three-cols-alt .benefit-category, #spend-and-earn .cards section .three-cols.three-cols-alt .benefit-category {
   height: auto;
 }
 
-#home-page .cards section .three-cols.three-cols-alt .benefit-category .bc-head, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category .bc-head, .get-set-up .cards section .three-cols.three-cols-alt .benefit-category .bc-head {
+#home-page .cards section .three-cols.three-cols-alt .benefit-category .bc-head, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category .bc-head, #get-set-up .cards section .three-cols.three-cols-alt .benefit-category .bc-head, #spend-and-earn .cards section .three-cols.three-cols-alt .benefit-category .bc-head {
   padding: 5px;
 }
 
-#home-page .cards section .three-cols.three-cols-alt .benefit-category.active, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category.active, .get-set-up .cards section .three-cols.three-cols-alt .benefit-category.active {
+#home-page .cards section .three-cols.three-cols-alt .benefit-category.active, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category.active, #get-set-up .cards section .three-cols.three-cols-alt .benefit-category.active, #spend-and-earn .cards section .three-cols.three-cols-alt .benefit-category.active {
   border: 1px solid rgba(0, 111, 207, 0.25);
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-#home-page .cards section .three-cols.three-cols-alt .benefit-category.active .bc-head, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category.active .bc-head, .get-set-up .cards section .three-cols.three-cols-alt .benefit-category.active .bc-head {
+#home-page .cards section .three-cols.three-cols-alt .benefit-category.active .bc-head, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category.active .bc-head, #get-set-up .cards section .three-cols.three-cols-alt .benefit-category.active .bc-head, #spend-and-earn .cards section .three-cols.three-cols-alt .benefit-category.active .bc-head {
   background-image: none;
   background-color: #f7f7f7;
   font-family: "Guardian Egyp";
@@ -962,7 +962,7 @@ a {
   color: #006FCF;
 }
 
-#home-page .cards section .three-cols.three-cols-alt .benefit-category.active .bc-head .bc-arrow, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category.active .bc-head .bc-arrow, .get-set-up .cards section .three-cols.three-cols-alt .benefit-category.active .bc-head .bc-arrow {
+#home-page .cards section .three-cols.three-cols-alt .benefit-category.active .bc-head .bc-arrow, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category.active .bc-head .bc-arrow, #get-set-up .cards section .three-cols.three-cols-alt .benefit-category.active .bc-head .bc-arrow, #spend-and-earn .cards section .three-cols.three-cols-alt .benefit-category.active .bc-head .bc-arrow {
   height: 18px;
   width: 10px;
 }
@@ -1322,6 +1322,9 @@ a {
   border: 2px solid #FFFFFF;
   border-radius: 5px;
   background-color: #00175A;
+  background-image: url("/img/blue-box-percentage.png");
+  background-position: center center;
+  background-repeat: no-repeat;
   margin: -260px 0 0 auto;
 }
 
@@ -1330,6 +1333,7 @@ a {
     height: 196px;
     max-width: 300px;
     margin: 30px auto 0;
+    background-size: 100%;
   }
 }
 
@@ -1361,7 +1365,7 @@ a {
 }
 
 #home-page .footer section .terms {
-  padding: 3em 0;
+  padding: 3em 20px;
 }
 
 #home-page .footer section .terms a {

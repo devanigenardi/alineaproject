@@ -142,11 +142,15 @@
             border: 2px solid #FFFFFF;
             border-radius: 5px;
             background-color: #00175A;
+            background-image: url('/img/blue-box-percentage.png');
+            background-position: center center;
+            background-repeat: no-repeat;
             margin: -260px 0 0 auto;
             @media (max-width: 767px) {
                 height: 196px;
                 max-width: 300px;
                 margin: 30px auto 0;
+                background-size: 100%;
             }
         }
     }
@@ -172,7 +176,7 @@
                 padding-bottom: 60px;
             }
             .terms {
-                padding: 3em 0;
+                padding: 3em 20px;
                 a {
                     margin-bottom: 0;
                     padding-bottom: 1em;
