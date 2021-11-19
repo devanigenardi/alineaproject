@@ -520,7 +520,7 @@ a {
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    bottom: -30px;
+    bottom: -40px;
     top: initial;
   }
 }
@@ -545,6 +545,44 @@ a {
   .inner-hero .gradient {
     display: none;
   }
+}
+
+.hero-ribbon-content {
+  color: red;
+  position: absolute;
+  z-index: 1;
+  height: 251px;
+  width: 547px;
+  top: 0px;
+  left: 60px;
+  bottom: 0px;
+  margin: auto;
+  text-align: center;
+  color: #006FCF;
+  padding: 45px 100px 0;
+}
+
+@media (max-width: 767px) {
+  .hero-ribbon-content {
+    position: relative;
+    width: 100%;
+    left: 0;
+    padding: 5px 0px 100px;
+    height: auto;
+  }
+}
+
+.hero-ribbon-content h2 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-bottom: 12px;
+}
+
+.hero-ribbon-content p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
 }
 
 .blue-container {
