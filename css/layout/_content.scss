@@ -82,6 +82,12 @@
             background-image: url('/img/fund_FundAccount_M.jpg');
         }
     }
+    &.ih2 {
+        background-image: url('/img/earn_MRPoints_x1.5.jpg');
+        @media (max-width: 767px) {
+            background-image: url('/img/earn_MRPoints_M.jpg');
+        }
+    }
     img {
         width: 100%;
         max-width: 574px;
@@ -117,6 +123,10 @@
             display: none;
         }
     }
+    .reverse-desktop {
+        right: 60px;
+        left: initial;
+    }
 }
 
 .hero-ribbon-content {
@@ -150,6 +160,14 @@
         font-size: 14px;
         font-weight: 300;
         line-height: 22px;
+    }
+    &.hero-ribbon-content-alt {
+        right: 60px;
+        left: initial;
+        color: $white;
+    }
+    &.hero-ribbon-content-darker {
+        color: #333333;
     }
 }
 
@@ -232,6 +250,59 @@
             }
         }
     }
+    &.blue-container-alt {
+        flex-direction: column;
+        margin-bottom: 0;
+        padding: 30px 40px;
+        h2 {
+            width: 100%;
+            text-align: left;
+        }
+        p {
+            text-align: left;
+            font-weight: 300;
+            margin-top: 25px;
+        }
+        .container {
+            flex-direction: column;
+            text-align: left;
+            padding-top: 30px;
+            & > div {
+                display: flex;
+                align-items: flex-start;
+                max-width: 100%;
+                img {
+                    width: 40px;
+                    height: auto;
+                    margin-right: 25px;
+                    @media (max-width: 767px) {
+                        margin-right: 0px;
+                    }
+                }
+                & > div {
+                    margin-bottom: 10px;
+                    h3 {
+                        margin-bottom: 2px;
+                    }
+                    p {
+                        margin-top: 0px;
+                    }
+                    .disclaimer {
+                        margin-top: 10px;
+                        padding-left: 0;
+                        p {
+                            font-size: 12px;
+                            font-weight: 300;
+                            line-height: 19px;
+                        }
+                    }
+                }
+                &:first-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
 }
 
 .content-columns {
@@ -243,6 +314,9 @@
         @media (max-width: 767px) {
             flex-direction: column-reverse;
             align-items: center;
+        }
+        .image-container-sm {
+            padding: 0 0 0 40px;
         }
         & > div {
             width: 50%;
@@ -266,6 +340,15 @@
         }
         .gray-box-container {
             padding: 0 20px;
+        }
+    }
+    &.content-columns-alt {
+        .slab {
+            justify-content: space-between;
+            padding-bottom: 60px;
+            & > div {
+                justify-content: flex-start;
+            }
         }
     }
 }
