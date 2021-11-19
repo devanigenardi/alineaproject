@@ -7,7 +7,7 @@
 .standard-title {
     max-width: 1126px;
     width: 100%;
-    border-bottom: 1px solid #333333;
+    border-bottom: 1px solid rgba(51, 51, 51, .35);
     margin: 0 auto;
     @media (max-width: 767px) {
         padding: 0 0 30px;
@@ -20,6 +20,7 @@
         color: #333333;
         text-transform: uppercase;
         text-align: center;
+        margin-bottom: 10px;
         @media (max-width: 767px) {
             font-size: 16px;
             line-height: 20px;
@@ -269,6 +270,22 @@
     }
 }
 
+.gray-box-disclaimer {
+    padding-top: 20px;
+    @media (max-width: 767px) {
+        max-width: 335px;
+    }    
+    p {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 17px;
+        color: #6A6A6A;
+        &:first-child {
+            margin-bottom: 3px;
+        }
+    }
+}
+
 .gray-box-sm {
     padding: 25px 35px 35px;
     width: 100%;
@@ -279,6 +296,7 @@
     @media (max-width: 767px) {
         margin-top: -65px;
         max-width: 335px;
+        padding: 25px 20px 20px;
     }
     h3 {
         font-size: 25px;
@@ -287,17 +305,35 @@
         color: #ffffff;
         position: relative;
         border-bottom: 1px solid rgba(255, 255, 255, .2);
-        padding-bottom: 10px;
+        padding-bottom: 40px;
         @media (max-width: 767px) {
             font-size: 20px;
         }
+        &::before {
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            background-color: $white;
+            opacity: 0.2;
+            left: 0px;
+            top: 25px;
+        }
+    }
+    h4 {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
     }
     p {
-        margin: 35px 0 25px;
+        margin: 0 0 25px;
         color: #333333;
         font-size: 14px;
         font-weight: 300;
         line-height: 22px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
     }
 
     a {
@@ -316,19 +352,21 @@
         left: 0px;
         right: -35px;
         top: 0px;
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
         @media (max-width: 767px) {
             background-color: rgba(117, 118, 121, 0.8);
         }
     }
 }
 
-#home-page, #fund-your-account {
+#home-page, #fund-your-account, .get-set-up {
     .cards {
         @include container-width-alt;
         section {
             .three-cols {
                 margin: 0 auto;
-                padding: 60px 0;
+                padding: 30px 0 60px;
                 max-width: 1126px;
                 @media (max-width: 767px) {
                     padding: 0 0 30px;

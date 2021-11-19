@@ -401,7 +401,7 @@ a {
 .standard-title {
   max-width: 1126px;
   width: 100%;
-  border-bottom: 1px solid #333333;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.35);
   margin: 0 auto;
 }
 
@@ -419,6 +419,7 @@ a {
   color: #333333;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 767px) {
@@ -778,6 +779,27 @@ a {
   padding: 0 20px;
 }
 
+.gray-box-disclaimer {
+  padding-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .gray-box-disclaimer {
+    max-width: 335px;
+  }
+}
+
+.gray-box-disclaimer p {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 17px;
+  color: #6A6A6A;
+}
+
+.gray-box-disclaimer p:first-child {
+  margin-bottom: 3px;
+}
+
 .gray-box-sm {
   padding: 25px 35px 35px;
   width: 100%;
@@ -792,6 +814,7 @@ a {
   .gray-box-sm {
     margin-top: -65px;
     max-width: 335px;
+    padding: 25px 20px 20px;
   }
 }
 
@@ -802,7 +825,7 @@ a {
   color: #ffffff;
   position: relative;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  padding-bottom: 10px;
+  padding-bottom: 40px;
 }
 
 @media (max-width: 767px) {
@@ -811,12 +834,33 @@ a {
   }
 }
 
+.gray-box-sm h3::before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #ffffff;
+  opacity: 0.2;
+  left: 0px;
+  top: 25px;
+}
+
+.gray-box-sm h4 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
 .gray-box-sm p {
-  margin: 35px 0 25px;
+  margin: 0 0 25px;
   color: #333333;
   font-size: 14px;
   font-weight: 300;
   line-height: 22px;
+}
+
+.gray-box-sm p:last-child {
+  margin-bottom: 0px;
 }
 
 .gray-box-sm a {
@@ -835,6 +879,8 @@ a {
   left: 0px;
   right: -35px;
   top: 0px;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
 }
 
 @media (max-width: 767px) {
@@ -843,38 +889,38 @@ a {
   }
 }
 
-#home-page .cards, #fund-your-account .cards {
+#home-page .cards, #fund-your-account .cards, .get-set-up .cards {
   max-width: 1550px;
   margin: 0 auto;
 }
 
-#home-page .cards section .three-cols, #fund-your-account .cards section .three-cols {
+#home-page .cards section .three-cols, #fund-your-account .cards section .three-cols, .get-set-up .cards section .three-cols {
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 30px 0 60px;
   max-width: 1126px;
 }
 
 @media (max-width: 767px) {
-  #home-page .cards section .three-cols, #fund-your-account .cards section .three-cols {
+  #home-page .cards section .three-cols, #fund-your-account .cards section .three-cols, .get-set-up .cards section .three-cols {
     padding: 0 0 30px;
   }
 }
 
-#home-page .cards section .three-cols.three-cols-alt .benefit-category, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category {
+#home-page .cards section .three-cols.three-cols-alt .benefit-category, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category, .get-set-up .cards section .three-cols.three-cols-alt .benefit-category {
   height: auto;
 }
 
-#home-page .cards section .three-cols.three-cols-alt .benefit-category .bc-head, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category .bc-head {
+#home-page .cards section .three-cols.three-cols-alt .benefit-category .bc-head, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category .bc-head, .get-set-up .cards section .three-cols.three-cols-alt .benefit-category .bc-head {
   padding: 5px;
 }
 
-#home-page .cards section .three-cols.three-cols-alt .benefit-category.active, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category.active {
+#home-page .cards section .three-cols.three-cols-alt .benefit-category.active, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category.active, .get-set-up .cards section .three-cols.three-cols-alt .benefit-category.active {
   border: 1px solid rgba(0, 111, 207, 0.25);
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-#home-page .cards section .three-cols.three-cols-alt .benefit-category.active .bc-head, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category.active .bc-head {
+#home-page .cards section .three-cols.three-cols-alt .benefit-category.active .bc-head, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category.active .bc-head, .get-set-up .cards section .three-cols.three-cols-alt .benefit-category.active .bc-head {
   background-image: none;
   background-color: #f7f7f7;
   font-family: "Guardian Egyp";
@@ -883,7 +929,7 @@ a {
   color: #006FCF;
 }
 
-#home-page .cards section .three-cols.three-cols-alt .benefit-category.active .bc-head .bc-arrow, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category.active .bc-head .bc-arrow {
+#home-page .cards section .three-cols.three-cols-alt .benefit-category.active .bc-head .bc-arrow, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category.active .bc-head .bc-arrow, .get-set-up .cards section .three-cols.three-cols-alt .benefit-category.active .bc-head .bc-arrow {
   height: 18px;
   width: 10px;
 }
@@ -910,6 +956,13 @@ a {
 
 .shadowBG .blueBG {
   max-width: 90%;
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .shadowBG .blueBG {
+    max-width: 100%;
+  }
 }
 
 .shadowBG .blueBG .inner-border {
@@ -966,12 +1019,65 @@ a {
 }
 
 .shadowBG .blueBG h3 {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 29px;
   text-align: center;
-  font-family: serif;
-  font-size: 24px;
-  color: #fff;
-  font-weight: normal;
-  margin: .5em 0 0 0;
+  margin: 15px 0 25px;
+}
+
+@media (max-width: 767px) {
+  .shadowBG .blueBG h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.shadowBG .blueBG .half-circle-contet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 700px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 20px;
+  position: relative;
+  z-index: 5;
+}
+
+@media (max-width: 767px) {
+  .shadowBG .blueBG .half-circle-contet {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
+.shadowBG .blueBG .half-circle-contet p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  width: 100%;
+  max-width: 481px;
+}
+
+@media (max-width: 767px) {
+  .shadowBG .blueBG .half-circle-contet p {
+    margin-bottom: 20px;
+  }
+}
+
+.shadowBG .blueBG .half-circle-contet a {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #ffffff;
 }
 
 .shadowBG .icon-circle-shadow {

@@ -6,6 +6,10 @@
 
     .blueBG {
       max-width: 90%;
+      color: $white;
+      @media (max-width: 767px) {
+        max-width: 100%;
+      }
       .inner-border {
         background-image: linear-gradient(#006FCF,#006FCF), linear-gradient(#FFF,#FFF),linear-gradient(#FFF,#FFF),linear-gradient(#FFF,#FFF),linear-gradient(#FFF,#FFF),linear-gradient(#FFF,#FFF);
         background-repeat: no-repeat;
@@ -48,8 +52,53 @@
       
       .icon-circle svg { transform: scale(.8); }
 
-      h3 { text-align: center; font-family: serif; font-size: 24px; color: #fff; font-weight: normal; margin: .5em 0 0 0; }
+      h3 {
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 29px;
+        text-align: center;
+        margin: 15px 0 25px;
+        @media (max-width: 767px) {
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+
+      .half-circle-contet {
+        display: flex;
+        width: 100%;
+        max-width: 700px;
+        justify-content: space-between;
+        margin: 0 auto;
+        border-top: 1px solid rgba(255, 255, 255, .4);
+        padding: 20px;
+        position: relative;
+        z-index: 5;
+        @media (max-width: 767px) {
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        p {
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 22px;
+          width: 100%;
+          max-width: 481px;
+          @media (max-width: 767px) {
+            margin-bottom: 20px;
+          }
+        }
+        a {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 22px;
+          color: $white;
+        }
+      }
+
     }
+
     .icon-circle-shadow {
       content: '';
       width: 56px;
