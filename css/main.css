@@ -1467,6 +1467,18 @@ a {
   border: 3px solid #006FCF;
   border-radius: 3px;
   background-color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+}
+
+#home-page .sticky-scroll-animation .sticky-scroll-container::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 90%;
+  top: 5%;
+  background-color: #000;
+  left: 10px;
 }
 
 #home-page .sticky-scroll-animation .blue-box {
@@ -1480,6 +1492,8 @@ a {
   background-position: center center;
   background-repeat: no-repeat;
   margin: -260px 0 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 @media (max-width: 767px) {
@@ -1539,5 +1553,48 @@ a {
   #home-page .whiteBG {
     padding: 30px 0 0;
   }
+}
+
+.square {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.square span {
+  display: block;
+  font-size: 30px;
+}
+
+.line {
+  position: absolute;
+  width: 3px;
+  height: 10px;
+  background: #000;
+  left: 9px;
+  top: 20px;
+}
+
+.logo {
+  position: absolute;
+  width: 1670px;
+  height: 300px;
+  background-image: url("/img/scrollJack/scrolljack_ribbon.svg");
+  background-repeat: no-repeat;
+  left: 790px;
+  top: 40px;
+}
+
+#txt1, #txt2, #txt3, #txt4 {
+  position: absolute;
+  width: auto;
+  right: 0;
+  top: 220px;
+  left: 0;
+  margin: auto;
+  opacity: 1;
+  text-align: center;
+  font-size: 18px;
+  font-family: arial;
 }
 /*# sourceMappingURL=main.css.map */

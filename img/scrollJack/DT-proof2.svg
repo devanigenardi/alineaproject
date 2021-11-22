@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="382px" height="141px" viewBox="0 0 382 141" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>DT-proof2</title>
+    <g id="DT-proof2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-weight="normal">
+        <g id="Group" transform="translate(49.166667, 7.000000)" fill="#333333">
+            <text id="1-Membership-Rewards" font-family="GuardianEgyp-Regular, Guardian Egyp" font-size="40" line-spacing="40">
+                <tspan x="21.82" y="32">1 Membership </tspan>
+                <tspan x="10.38" y="72">Rewards® point</tspan>
+            </text>
+            <text id="for-every-$2-spent" font-family="BentonSans-Regular, BentonSans" font-size="22">
+                <tspan x="49.644" y="117">for every $2 spent</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
