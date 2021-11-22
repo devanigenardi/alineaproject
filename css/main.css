@@ -53,6 +53,25 @@
   height: 10px;
 }
 
+.bold-sm {
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .footer-dll {
+    width: 240px;
+    height: auto;
+  }
+}
+
+.super {
+  font-size: .83em;
+  line-height: 0.5em;
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -502,8 +521,27 @@ a {
   background-position: bottom right;
 }
 
+@media (max-width: 767px) {
+  .head-flourish {
+    background-image: url("/img/global_headerFlourish_mobile.svg");
+  }
+}
+
 .head-flourish .hf-head {
   margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+  .head-flourish .hf-head {
+    font-size: 30px;
+    max-width: 310px;
+  }
+}
+
+@media (max-width: 767px) {
+  .head-flourish .hf-text {
+    margin-bottom: 0;
+  }
 }
 
 .inner-hero {
@@ -923,13 +961,17 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
 .content-columns.content-columns-alt .slab > div {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.content-columns.content-columns-alt .slab:last-child {
+  padding-bottom: 0px;
 }
 
 .gray-box-disclaimer {
@@ -961,6 +1003,7 @@ a {
   -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
   position: relative;
+  margin: 0 auto;
 }
 
 @media (max-width: 767px) {
@@ -1067,6 +1110,12 @@ a {
   padding: 5px;
 }
 
+@media (max-width: 849px) {
+  #home-page .cards section .three-cols.three-cols-alt .benefit-category .bc-head, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category .bc-head, #get-set-up .cards section .three-cols.three-cols-alt .benefit-category .bc-head, #spend-and-earn .cards section .three-cols.three-cols-alt .benefit-category .bc-head {
+    width: 100%;
+  }
+}
+
 #home-page .cards section .three-cols.three-cols-alt .benefit-category.active, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category.active, #get-set-up .cards section .three-cols.three-cols-alt .benefit-category.active, #spend-and-earn .cards section .three-cols.three-cols-alt .benefit-category.active {
   border: 1px solid rgba(0, 111, 207, 0.25);
   -webkit-box-shadow: none;
@@ -1083,8 +1132,8 @@ a {
 }
 
 #home-page .cards section .three-cols.three-cols-alt .benefit-category.active .bc-head .bc-arrow, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category.active .bc-head .bc-arrow, #get-set-up .cards section .three-cols.three-cols-alt .benefit-category.active .bc-head .bc-arrow, #spend-and-earn .cards section .three-cols.three-cols-alt .benefit-category.active .bc-head .bc-arrow {
-  height: 18px;
-  width: 10px;
+  height: 20px;
+  width: 20px;
 }
 
 .blueBG {

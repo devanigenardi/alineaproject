@@ -44,3 +44,22 @@
         }
     }
 }
+
+.bold-sm {
+    font-weight: 500;
+}
+
+@media (max-width: 767px) {
+    .footer-dll {
+        width: 240px;
+        height: auto;
+    }
+}
+
+.super {
+    font-size: .83em;
+    line-height: 0.5em;
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+}
