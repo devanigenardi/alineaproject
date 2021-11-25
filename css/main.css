@@ -1467,7 +1467,7 @@ a {
 }
 
 #home-page .sticky-scroll-animation .sticky-scroll-container {
-  height: 438px;
+  height: 437px;
   width: 100%;
   max-width: 808px;
   border: 3px solid #006FCF;
@@ -1477,14 +1477,22 @@ a {
   overflow: hidden;
 }
 
-#home-page .sticky-scroll-animation .sticky-scroll-container::before {
-  content: '';
+#home-page .sticky-scroll-animation .dots-container {
   position: absolute;
-  width: 1px;
-  height: 90%;
-  top: 5%;
-  background-color: #000;
-  left: 10px;
+  width: 14px;
+  height: 411px;
+  top: 57px;
+  background-image: url("/img/dots-container.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 14px;
+}
+
+#home-page .sticky-scroll-animation .dots-container img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  opacity: 0;
 }
 
 #home-page .sticky-scroll-animation .blue-box {
@@ -1494,7 +1502,6 @@ a {
   border: 2px solid #FFFFFF;
   border-radius: 5px;
   background-color: #00175A;
-  background-image: url("/img/blue-box-percentage.png");
   background-position: center center;
   background-repeat: no-repeat;
   margin: -260px 0 0 auto;
@@ -1509,6 +1516,11 @@ a {
     margin: 30px auto 0;
     background-size: 100%;
   }
+}
+
+#home-page .sticky-scroll-animation .blue-box img {
+  width: 100%;
+  position: absolute;
 }
 
 #home-page .grayBG {
@@ -1574,11 +1586,11 @@ a {
 
 .line {
   position: absolute;
-  width: 3px;
+  width: 4px;
   height: 10px;
-  background: #000;
-  left: 9px;
-  top: 20px;
+  background: #00175a;
+  left: 16px;
+  top: 9px;
 }
 
 .logo {
@@ -1587,13 +1599,14 @@ a {
   height: 300px;
   background-image: url("/img/scrollJack/scrolljack_ribbon.svg");
   background-repeat: no-repeat;
-  left: 790px;
+  left: 490px;
   top: 40px;
 }
 
 #txt1, #txt2, #txt3, #txt4 {
   position: absolute;
-  width: auto;
+  width: 50%;
+  height: auto;
   right: 0;
   top: 220px;
   left: 0;
@@ -1602,6 +1615,10 @@ a {
   text-align: center;
   font-size: 18px;
   font-family: arial;
+}
+
+#bb-1, #bb-2, #bb-3, #bb-4 {
+  opacity: 0;
 }
 
 .scrollmagic-pin-spacer {
