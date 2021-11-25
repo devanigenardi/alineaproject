@@ -116,6 +116,7 @@
         padding: 45px 0 80px;
         @media (max-width: 767px) {
             padding-bottom: 30px;
+            padding: 0px 0 30px;
         }
         .sticky-scroll-container {
             height: 437px;
@@ -126,6 +127,10 @@
             background-color: #FFFFFF;
             position: relative;
             overflow: hidden;
+            @media (max-width: 767px) {
+                height: 270px;
+                border: none;
+            }
         }
         .dots-container {
             position: absolute;
@@ -156,14 +161,15 @@
             position: relative;
             z-index: 1;
             @media (max-width: 767px) {
-                height: 196px;
+                height: 168px;
                 max-width: 300px;
-                margin: 30px auto 0;
+                margin: 0px auto 0;
                 background-size: 100%;
             }
             img {
                 width: 100%;
                 position: absolute;
+                top: -20px;
             }
         }
     }
@@ -222,6 +228,11 @@
   width: 100%;
   height: 100%;
   position: relative;
+  @media (max-width: 767px) {
+      margin: auto;
+      left: 0;
+      right: 0;
+  }
 }
 
 .square span {
@@ -232,10 +243,15 @@
 .line {
 position: absolute;
 width: 4px;
-height: 10px;
+height: 15px;
 background: #00175a;
 left: 16px;
 top: 9px;
+    @media (max-width: 767px) {
+        border-radius: 2px;
+        left: initial;
+        right: 20px;
+    }
 }
 
 .logo {
@@ -246,6 +262,11 @@ background-image: url('/img/scrollJack/scrolljack_ribbon.svg');
 background-repeat: no-repeat;
 left: 490px;
 top: 40px;
+    @media (max-width: 767px) {
+        left: 50%;
+        height: 170px;
+        top: 25%;
+    }
 }
 
 #txt1, #txt2, #txt3, #txt4 {
@@ -260,6 +281,10 @@ top: 40px;
   text-align: center;
   font-size: 18px;
   font-family: arial;
+  @media (max-width: 767px) {
+    top: 150px;
+    width: 75%;
+  }
 }
 
 #bb-1, #bb-2, #bb-3, #bb-4 {

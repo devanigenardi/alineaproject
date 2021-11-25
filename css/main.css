@@ -1463,6 +1463,7 @@ a {
 @media (max-width: 767px) {
   #home-page .sticky-scroll-animation {
     padding-bottom: 30px;
+    padding: 0px 0 30px;
   }
 }
 
@@ -1475,6 +1476,13 @@ a {
   background-color: #FFFFFF;
   position: relative;
   overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  #home-page .sticky-scroll-animation .sticky-scroll-container {
+    height: 270px;
+    border: none;
+  }
 }
 
 #home-page .sticky-scroll-animation .dots-container {
@@ -1511,9 +1519,9 @@ a {
 
 @media (max-width: 767px) {
   #home-page .sticky-scroll-animation .blue-box {
-    height: 196px;
+    height: 168px;
     max-width: 300px;
-    margin: 30px auto 0;
+    margin: 0px auto 0;
     background-size: 100%;
   }
 }
@@ -1521,6 +1529,7 @@ a {
 #home-page .sticky-scroll-animation .blue-box img {
   width: 100%;
   position: absolute;
+  top: -20px;
 }
 
 #home-page .grayBG {
@@ -1579,6 +1588,14 @@ a {
   position: relative;
 }
 
+@media (max-width: 767px) {
+  .square {
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+}
+
 .square span {
   display: block;
   font-size: 30px;
@@ -1587,10 +1604,18 @@ a {
 .line {
   position: absolute;
   width: 4px;
-  height: 10px;
+  height: 15px;
   background: #00175a;
   left: 16px;
   top: 9px;
+}
+
+@media (max-width: 767px) {
+  .line {
+    border-radius: 2px;
+    left: initial;
+    right: 20px;
+  }
 }
 
 .logo {
@@ -1601,6 +1626,14 @@ a {
   background-repeat: no-repeat;
   left: 490px;
   top: 40px;
+}
+
+@media (max-width: 767px) {
+  .logo {
+    left: 50%;
+    height: 170px;
+    top: 25%;
+  }
 }
 
 #txt1, #txt2, #txt3, #txt4 {
@@ -1615,6 +1648,13 @@ a {
   text-align: center;
   font-size: 18px;
   font-family: arial;
+}
+
+@media (max-width: 767px) {
+  #txt1, #txt2, #txt3, #txt4 {
+    top: 150px;
+    width: 75%;
+  }
 }
 
 #bb-1, #bb-2, #bb-3, #bb-4 {
