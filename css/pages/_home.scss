@@ -141,11 +141,21 @@
             background-size: contain;
             background-repeat: no-repeat;
             left: 14px;
+            z-index: 1;
             img {
                 position: absolute;
                 width: 100%;
                 height: auto;
                 opacity: 0;
+            }
+            &::before {
+                content: '';
+                width: 10px;
+                height: 10px;
+                left: 2px;
+                bottom: -10px;
+                background: $white;
+                position: absolute;
             }
         }
         .blue-box {
@@ -163,7 +173,7 @@
             @media (max-width: 767px) {
                 height: 168px;
                 max-width: 300px;
-                margin: 0px auto 0;
+                margin: 20px auto 0;
                 background-size: 100%;
             }
             img {
@@ -233,6 +243,18 @@
       left: 0;
       right: 0;
   }
+  &::after {
+    @media (min-width: 768px) {
+        content: '';
+        width: 40px;
+        height: 390px;
+        left: -11px;
+        top: 0px;
+        background: white;
+        position: absolute;
+        }
+    }
+
 }
 
 .square span {
@@ -247,6 +269,7 @@ height: 15px;
 background: #00175a;
 left: 16px;
 top: 9px;
+z-index: 1;
     @media (max-width: 767px) {
         border-radius: 2px;
         left: initial;
@@ -274,7 +297,6 @@ top: 40px;
   width: 50%;
   height: auto;
   right: 0;
-  top: 220px;
   left: 0;
   margin: auto;
   opacity: 1;
@@ -285,6 +307,18 @@ top: 40px;
     top: 150px;
     width: 75%;
   }
+}
+
+#txt1, #txt3 {
+    top: 150px;
+}
+
+#txt2 {
+    top: 120px;
+}
+
+#txt4 {
+    top: 170px;
 }
 
 #bb-1, #bb-2, #bb-3, #bb-4 {
