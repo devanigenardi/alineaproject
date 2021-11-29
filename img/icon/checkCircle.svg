@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>checkCircle</title>
+    <g id="PAGE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="card/footer/selected" transform="translate(-300.000000, -18.000000)">
+            <g id="checkCircle" transform="translate(301.000000, 19.000000)">
+                <circle id="Oval-Copy-11" stroke="#006FCF" stroke-width="2" fill="#006FCF" cx="10" cy="10" r="10"></circle>
+                <path d="M8.80942833,13.067486 L6.32169444,10.3855229 C6.03148168,10.0726518 5.54711476,10.0585612 5.23983066,10.3540505 C4.93254655,10.6495398 4.9187075,11.1427134 5.20892026,11.4555844 L8.27014185,14.7558101 C8.57843998,15.0881785 9.10022194,15.0801578 9.39852533,14.7384649 L15.5209685,7.72548529 C15.8017728,7.40383672 15.7733182,6.91131332 15.4574134,6.62540348 C15.1415085,6.33949363 14.6577801,6.3684656 14.3769757,6.69011417 L8.80942833,13.067486 Z" id="Checkmark" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

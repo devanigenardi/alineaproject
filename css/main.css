@@ -968,6 +968,16 @@ a {
   padding: 0 20px;
 }
 
+.content-columns .slab.slab-gap-md {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 767px) {
+  .content-columns .slab.slab-gap-md {
+    margin-bottom: 30px;
+  }
+}
+
 .content-columns.content-columns-alt .slab {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -1114,12 +1124,44 @@ a {
   }
 }
 
+#home-page .cards section .three-cols .bc-head .bc-icon, #fund-your-account .cards section .three-cols .bc-head .bc-icon, #get-set-up .cards section .three-cols .bc-head .bc-icon, #spend-and-earn .cards section .three-cols .bc-head .bc-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 #home-page .cards section .three-cols.three-cols-alt .benefit-category, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category, #get-set-up .cards section .three-cols.three-cols-alt .benefit-category, #spend-and-earn .cards section .three-cols.three-cols-alt .benefit-category {
   height: auto;
 }
 
 #home-page .cards section .three-cols.three-cols-alt .benefit-category .bc-head, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category .bc-head, #get-set-up .cards section .three-cols.three-cols-alt .benefit-category .bc-head, #spend-and-earn .cards section .three-cols.three-cols-alt .benefit-category .bc-head {
-  padding: 5px;
+  padding: 5px 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home-page .cards section .three-cols.three-cols-alt .benefit-category .bc-head .bc-icon, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category .bc-head .bc-icon, #get-set-up .cards section .three-cols.three-cols-alt .benefit-category .bc-head .bc-icon, #spend-and-earn .cards section .three-cols.three-cols-alt .benefit-category .bc-head .bc-icon {
+  width: 35px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#home-page .cards section .three-cols.three-cols-alt .benefit-category .bc-head .bc-icon img, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category .bc-head .bc-icon img, #get-set-up .cards section .three-cols.three-cols-alt .benefit-category .bc-head .bc-icon img, #spend-and-earn .cards section .three-cols.three-cols-alt .benefit-category .bc-head .bc-icon img {
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home-page .cards section .three-cols.three-cols-alt .benefit-category .bc-head .bc-icon.bc-icon-30, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category .bc-head .bc-icon.bc-icon-30, #get-set-up .cards section .three-cols.three-cols-alt .benefit-category .bc-head .bc-icon.bc-icon-30, #spend-and-earn .cards section .three-cols.three-cols-alt .benefit-category .bc-head .bc-icon.bc-icon-30 {
+  width: 30px;
+}
+
+#home-page .cards section .three-cols.three-cols-alt .benefit-category .bc-head .bc-icon.bc-icon-alt, #fund-your-account .cards section .three-cols.three-cols-alt .benefit-category .bc-head .bc-icon.bc-icon-alt, #get-set-up .cards section .three-cols.three-cols-alt .benefit-category .bc-head .bc-icon.bc-icon-alt, #spend-and-earn .cards section .three-cols.three-cols-alt .benefit-category .bc-head .bc-icon.bc-icon-alt {
+  width: 40px;
 }
 
 @media (max-width: 849px) {
@@ -1691,12 +1733,30 @@ a {
   top: 150px;
 }
 
+@media (max-width: 767px) {
+  #txt1, #txt3 {
+    top: 80px;
+  }
+}
+
 #txt2 {
   top: 120px;
 }
 
+@media (max-width: 767px) {
+  #txt2 {
+    top: 60px;
+  }
+}
+
 #txt4 {
   top: 170px;
+}
+
+@media (max-width: 767px) {
+  #txt4 {
+    top: 100px;
+  }
 }
 
 #bb-1, #bb-2, #bb-3, #bb-4 {

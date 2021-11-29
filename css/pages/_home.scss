@@ -263,13 +263,13 @@
 }
 
 .line {
-position: absolute;
-width: 4px;
-height: 15px;
-background: #00175a;
-left: 16px;
-top: 9px;
-z-index: 1;
+    position: absolute;
+    width: 4px;
+    height: 15px;
+    background: #00175a;
+    left: 16px;
+    top: 9px;
+    z-index: 1;
     @media (max-width: 767px) {
         border-radius: 2px;
         left: initial;
@@ -278,13 +278,13 @@ z-index: 1;
 }
 
 .logo {
-position: absolute;
-width: 1670px;
-height: 300px;
-background-image: url('/img/scrollJack/scrolljack_ribbon.svg');
-background-repeat: no-repeat;
-left: 490px;
-top: 40px;
+    position: absolute;
+    width: 1670px;
+    height: 300px;
+    background-image: url('/img/scrollJack/scrolljack_ribbon.svg');
+    background-repeat: no-repeat;
+    left: 490px;
+    top: 40px;
     @media (max-width: 767px) {
         left: 50%;
         height: 170px;
@@ -311,14 +311,23 @@ top: 40px;
 
 #txt1, #txt3 {
     top: 150px;
+    @media (max-width: 767px) {
+        top: 80px;
+      }
 }
 
 #txt2 {
     top: 120px;
+    @media (max-width: 767px) {
+        top: 60px;
+      }
 }
 
 #txt4 {
     top: 170px;
+    @media (max-width: 767px) {
+        top: 100px;
+      }
 }
 
 #bb-1, #bb-2, #bb-3, #bb-4 {

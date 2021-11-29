@@ -356,6 +356,12 @@
         .gray-box-container {
             padding: 0 20px;
         }
+        &.slab-gap-md {
+            margin-bottom: 60px;
+            @media (max-width: 767px) {
+                margin-bottom: 30px;
+            }
+        }
     }
     &.content-columns-alt {
         .slab {
@@ -478,11 +484,32 @@
                 @media (max-width: 767px) {
                     padding: 0 0 30px;
                 }
+                .bc-head {
+                    .bc-icon {
+                        display: flex;
+                    }
+                }
                 &.three-cols-alt {
                     .benefit-category {
                         height: auto;
                         .bc-head {
-                            padding: 5px;
+                            padding: 5px 10px;
+                            align-items: center;
+                            .bc-icon {
+                                width: 35px;
+                                height: 40px;
+                                display: flex;
+                                img {
+                                    margin: 0 auto;
+                                    align-items: center;
+                                }
+                                &.bc-icon-30 {
+                                    width: 30px;
+                                }
+                                &.bc-icon-alt {
+                                    width: 40px;
+                                }
+                            }
                             @media (max-width: 849px) {
                                 width: 100%;
                             }
