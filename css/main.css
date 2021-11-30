@@ -1124,6 +1124,10 @@ a {
   }
 }
 
+#home-page .cards section .three-cols .bc-head, #fund-your-account .cards section .three-cols .bc-head, #get-set-up .cards section .three-cols .bc-head, #spend-and-earn .cards section .three-cols .bc-head {
+  padding: 15px;
+}
+
 #home-page .cards section .three-cols .bc-head .bc-icon, #fund-your-account .cards section .three-cols .bc-head .bc-icon, #get-set-up .cards section .three-cols .bc-head .bc-icon, #spend-and-earn .cards section .three-cols .bc-head .bc-icon {
   display: -webkit-box;
   display: -ms-flexbox;
