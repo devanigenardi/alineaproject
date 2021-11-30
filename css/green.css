@@ -1,83 +1,18 @@
-
 .hh-flourish { opacity: .4; }
-
-
 .card-navBG { background: #006FCF; border-bottom: 1px solid rgba(255,255,255,.25);; }
-
 .explore-close { background: #006FCF; border-bottom: 1px solid transparent; }
 .explore-link { background-color: #006FCF; border-bottom: 1px solid rgba(255,255,255,.25);}
 .explore-link-external { background-color: #fff; border-bottom: 1px solid #4f6093; }
-
 .hh-welcomeBG { background: rgba(0,23,90, .7); }
-
 .hf-subhead { color: #AED5F4;}
-
 .acc-head { color: #00175A; }
-
 .benefit-category { border: 1px solid #006FCF; border-left: 3px solid #006FCF; }
 .bc-head { background-color: #006FCF; background-image: url(../img/world_service_tile_blue.svg); }
-
-.qs-icons { background-image: linear-gradient(#006FCF,#006FCF); }
-/* .qs-icon { border: 3px solid #006FCF; background-image: url(../img/check-blue.svg); } */
-
-.ribbonBG { background-image: url(../img/ribbon-light-blue.svg); }
-.fb-head {  background-color:#00175A; }
-
 .greyBG { background: #006FCF; }
-
-.sc-item svg path { fill: #006FCF; }
-
-.amex-offersBG { background-color: #00175A; }
-.amex-offers  { background-image: url(../img/ribbon-white10.svg); }
-
-.tct-box h2 { color: #fff; background: #006FCF; }
-
-.sc-items { border: 2px solid #00175A; }
-
-.mr-item { background-color: #006FCF; }
-
-.shop-and-dine { border: 2px solid #006FCF; }
-
 /* small card in sticky nav - all four HTML pages */
 .cn-card { background-image: url(../img/card-nav.png?v=0); }
 
-/* index.html */
-.home-heroBG { background-image:url(../img/home-hero.jpg?v=0); }
-.not-a-member { background:  #006FCF;}
 
-/* desktop-only left column image in MR section on earn-rewards-points.html */
-.mi-img {  background-image: url(../img/rewards-MRHero.jpg?v=0); }
 
-/* accelerator images on earn-rewards-points.html */
-.acc3xDining { background-image:url(../img/rewards-3xDining.jpg?v=0); }
-.acc3xTransit { background-image:url(../img/rewards-3xTransit.jpg?v=0); }
-.acc3xTravel { background-image:url(../img/rewards-3xTravel.jpg?v=0); }
-.acc1xEverythingElse { background-image:url(../img/rewards-1xEverythingElse.jpg?v=0); }
-.ai-img { background-image: url(../img/rewards-1xEverythingElse.jpg?v=0); }
 
-/* feature benefits on discover-your-benefits.html */
-.fb-featured1 { background-image:url(../img/benefits-featured1.jpg?v=0)}
-.fb-featured2 { background-image:url(../img/benefits-featured2.jpg?v=0)}
 
-/* send-and-split on set-up-and-payments.html */
-.send-and-split-text { background: #00175A;}
-.sas-img { background-image:url("../gold/img/setup-sendAndSplit.jpg?v=0") }
-
-@media all and (max-width: 950px) {
-	.hhw-text h2 { font-size: calc(1.8rem * .625);}
-}
-
-@media all and (max-width: 850px) {
-	.fb-head {  background-color: rgba(0,23,90,.8); }
-}
-
-@media all and (max-width: 700px) {
-	/* discover-your-benefits.html mobile headers for other benefits - desktop versions are on page */
-	.ob-forTheExperience { background-image:url(../img/benefits-forTheExperience.jpg?v=0); }
-	.ob-forASafeJourney { background-image:url(../img/benefits-forASafeJourney.jpg?v=0); }
-	.ob-forEverydaySecurity { background-image:url(../img/benefits-forEverydaySecurity.jpg?v=0); }
-	
-	.hh-flourish { opacity: .7; }
-
-	.hhw-text h2 { font-size: calc(1.5rem * .625);}
-}

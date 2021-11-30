@@ -1129,6 +1129,7 @@ a {
 }
 
 #home-page .cards section .three-cols .bc-head .bc-icon, #fund-your-account .cards section .three-cols .bc-head .bc-icon, #get-set-up .cards section .three-cols .bc-head .bc-icon, #spend-and-earn .cards section .three-cols .bc-head .bc-icon {
+  margin-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
