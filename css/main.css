@@ -1080,6 +1080,7 @@ a {
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
+  margin-bottom: 5px;
 }
 
 .gray-box-sm p {
@@ -1278,8 +1279,8 @@ a {
 }
 
 .shadowBG .blueBG .icon-circle svg {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
 }
 
 .shadowBG .blueBG h3 {
