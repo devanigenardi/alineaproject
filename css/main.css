@@ -77,6 +77,10 @@
   text-decoration: underline;
 }
 
+.all-terms {
+  list-style-type: none;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -651,7 +655,7 @@ a {
   margin: auto;
   text-align: center;
   color: #006FCF;
-  padding: 45px 100px 0;
+  padding: 15px 100px 0;
 }
 
 @media (max-width: 767px) {
@@ -681,6 +685,7 @@ a {
   right: 60px;
   left: initial;
   color: #ffffff;
+  padding: 45px 100px 0;
 }
 
 .hero-ribbon-content.hero-ribbon-content-darker {
@@ -1596,6 +1601,18 @@ a {
   width: 100%;
   position: absolute;
   top: -20px;
+}
+
+#home-page .gap-30 {
+  font-size: 0px;
+  line-height: 0px;
+  background-color: #ffffff;
+}
+
+@media (min-width: 780px) {
+  #home-page .gap-30 {
+    padding-top: 60px;
+  }
 }
 
 #home-page .grayBG {

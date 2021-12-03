@@ -153,7 +153,7 @@
     margin: auto;
     text-align: center;
     color: $blue;
-    padding: 45px 100px 0;
+    padding: 15px 100px 0;
     @media (max-width: 767px) {
         position: relative;
         width: 100%;
@@ -177,6 +177,7 @@
         right: 60px;
         left: initial;
         color: $white;
+        padding: 45px 100px 0;
     }
     &.hero-ribbon-content-darker {
         color: #333333;

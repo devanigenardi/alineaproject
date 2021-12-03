@@ -183,6 +183,15 @@
             }
         }
     }
+
+    .gap-30 {
+        font-size: 0px;
+        line-height: 0px;
+        background-color: $white;
+        @media (min-width: 780px) {
+            padding-top: 60px;
+        }
+    }
     
     .grayBG {
         background-color: $gray;
