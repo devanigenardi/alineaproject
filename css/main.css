@@ -604,7 +604,7 @@ a {
   left: 30px;
 }
 
-@media (max-width: 677px) {
+@media (max-width: 767px) {
   .inner-hero img {
     width: 100vw;
     left: 50%;
