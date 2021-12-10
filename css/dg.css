@@ -243,10 +243,13 @@ section {
 	transition: all .25s ease;
 }
 
-.benefit-category:hover {
-	transform: translateY(-10px);
-	box-shadow: 0 13px 26px 0 rgb(0 0 0 / 20%);
+.benefit-category:hover .bc-head {
+	background-color: #0e225e;
+	/* transform: translateY(-10px);
+	box-shadow: 0 13px 26px 0 rgb(0 0 0 / 20%); */
 }
+
+
 
 .bc-head {
 	display: flex;
