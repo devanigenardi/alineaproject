@@ -367,6 +367,9 @@
         }
         .gray-box-container {
             padding: 0 20px;
+            @media (max-width: 767px) {
+                padding: 0 0px;
+            }
         }
         &.slab-gap-md {
             margin-bottom: 60px;
@@ -413,10 +416,13 @@
     box-shadow: 0 0 8px 0 rgba(0,0,0,0.25);
     position: relative;
     margin: 0 auto;
+    background-color: #ffffff;
     @media (max-width: 767px) {
         margin-top: -71px;
-        max-width: 335px;
+        max-width: 100%;
         padding: 25px 20px 20px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
     }
     h3 {
         font-size: 25px;
@@ -438,7 +444,7 @@
             right: initial;
             margin: 0 -20px;
             padding: 25px 20px 20px;
-            background-color: rgba(117, 118, 121, 0.8);
+            background-color: rgba(79, 79, 79, 0.8);
             border-top-right-radius: 5px;
             border-top-left-radius: 5px;
         }
@@ -477,18 +483,31 @@
         font-weight: 500;
         line-height: 22px;
     }
-    .qr-code {
-        display: flex;
-        @media (max-width: 767px) {
-            flex-direction: column;
+    
+    &.qr-code-container {
+        @media (min-width: 768px) {
+            padding: 25px 35px 7px;
         }
-        .qr-code-image {
-            width: 92px;
-            height: 92px;
-            margin: -10px -20px 0 10px;
+        
+        .qr-code {
+            display: flex;
             @media (max-width: 767px) {
-                    display: none;
-                }
+                flex-direction: column;
+            }
+            .qr-code-image {
+                width: 92px;
+                height: 92px;
+                margin: -10px -20px 0 10px;
+                @media (max-width: 767px) {
+                        display: none;
+                    }
+            }
+        }
+        .link-arrow-sm::after {
+            @media (max-width: 767px) {
+                left: 115px;
+                margin: auto 0;
+            } 
         }
     }
     
@@ -496,6 +515,18 @@
 
 .gray-box-sm-alt {
     @media (max-width: 767px) {
+        margin-top: -71px;
+    }
+    @media (max-width: 375px) {
+        margin-top: -96px;
+    }
+}
+
+.gray-box-sm-alt-2 {
+    @media (max-width: 767px) {
+        margin-top: -71px;
+    }
+    @media (max-width: 420px) {
         margin-top: -96px;
     }
 }

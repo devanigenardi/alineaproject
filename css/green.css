@@ -6,8 +6,7 @@
 .hh-welcomeBG { background: rgba(0,23,90, .7); }
 .hf-subhead { color: #AED5F4;}
 .acc-head { color: #00175A; }
-.benefit-category { border: 1px solid #006FCF; border-left: 3px solid #006FCF; }
-.bc-head { background-color: #006FCF; background-image: url(../img/world_service_tile_blue.svg); }
+.bc-head { background-color: #006FCF; }
 .greyBG { background: #006FCF; }
 /* small card in sticky nav - all four HTML pages */
 .cn-card { background-image: url(../img/card-nav.png?v=0); }

@@ -233,20 +233,31 @@ section {
 .three-cols .col { width: 31%; }
 
 .benefit-category {
-	box-shadow: 0 0 7px 0 rgba(0,0,0,0.34);
 	text-decoration: none;
 	display: block;
 	height: 100%;
 	background: #fff;
-	border: 1px solid #757679;
-	border-left: 3px solid #757679;
 	transition: all .25s ease;
+	overflow: hidden;
+	border: 1px solid #006FCF;
+}
+
+.benefit-category:hover {
+	background-color: #0e225e;
+	border: 1px solid #0e225e;
+	transform: translateY(-5px);
+	/* box-shadow: 0 13px 26px 0 rgb(0 0 0 / 20%); */
+}
+
+.benefit-category.active:hover {
+	background-color: initial;
+	transform: translateY(0px);
+	/* box-shadow: 0 13px 26px 0 rgb(0 0 0 / 20%); */
 }
 
 .benefit-category:hover .bc-head {
 	background-color: #0e225e;
-	/* transform: translateY(-10px);
-	box-shadow: 0 13px 26px 0 rgb(0 0 0 / 20%); */
+	transition: 0.3s;
 }
 
 
@@ -272,6 +283,13 @@ section {
 	font-size: calc(1.4rem * .625);
 	line-height: 1.5em;
 	color: #333;
+	height: 76%;
+}
+
+@media screen and (max-width: 850px) {
+	.bc-desc {
+		height: 100%;
+	}
 }
 
 .footer-dll {
