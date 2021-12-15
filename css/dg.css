@@ -240,6 +240,7 @@ section {
 	transition: all .25s ease;
 	overflow: hidden;
 	border: 1px solid #006FCF;
+	box-shadow: 0 0 7px 0 rgba(0,0,0,0.34);
 }
 
 .benefit-category:hover {
@@ -311,7 +312,7 @@ section {
 .wst-dll {
 	width: 100%;
 	height: 150px;
-	background:url(../img/world_service_tile.svg);
+	background:url(../img/world_service_tile_footer.svg);
 	background-size: 200px;
 	display: flex;
 	align-items: center;

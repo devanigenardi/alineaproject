@@ -207,6 +207,9 @@
     margin-bottom: 60px;
     @media (max-width: 767px) {
         padding: 30px;
+        width: 110%;
+        margin-left: -5%;
+        border-radius: initial;
      }
     h2 {
         font-size: 25px;
@@ -377,6 +380,16 @@
                 margin-bottom: 50px;
             }
         }
+        &.pull-out-mobile {
+            @media (max-width: 767px) {
+                margin-left: -5%;
+                margin-right: -5%;
+                width: 110%;
+            }
+            .blue-container-alt {
+                border-radius: initial;
+            }
+        }
     }
     &.content-columns-alt {
         .slab {
@@ -416,7 +429,6 @@
     box-shadow: 0 0 8px 0 rgba(0,0,0,0.25);
     position: relative;
     margin: 0 auto;
-    background-color: #ffffff;
     @media (max-width: 767px) {
         margin-top: -71px;
         max-width: 100%;

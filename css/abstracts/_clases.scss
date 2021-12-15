@@ -54,6 +54,9 @@
         width: 240px;
         height: auto;
     }
+    .section-full-mobile {
+        width: 100%;
+    }
 }
 
 .super {
@@ -73,7 +76,9 @@
     list-style-type:none;
 }
 
-
+.white-box-bg {
+    background-color: $white;
+}
 
 @media (min-width: 767px) {
     .border-image-container {
@@ -84,4 +89,5 @@
         border: 1px solid #D8D8D8;
         border-radius: 4px;
     }
+
 }
