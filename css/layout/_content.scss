@@ -210,7 +210,7 @@
         width: 110%;
         margin-left: -5%;
         border-radius: initial;
-     }
+    }
     h2 {
         font-size: 25px;
         line-height: 28px;
@@ -281,6 +281,9 @@
         flex-direction: column;
         margin-bottom: 0;
         padding: 30px 40px;
+        @media (max-width: 767px) {
+            margin-left: 0%;
+        }
         h2 {
             width: 100%;
             text-align: left;
@@ -387,7 +390,9 @@
                 width: 110%;
             }
             .blue-container-alt {
-                border-radius: initial;
+                @media (max-width: 767px) {
+                    border-radius: initial;
+                }
             }
         }
     }
@@ -408,7 +413,8 @@
 .gray-box-disclaimer {
     padding-top: 20px;
     @media (max-width: 767px) {
-        max-width: 335px;
+        max-width: 100%;
+        background: #f7f7f7;
     }    
     p {
         font-size: 12px;
