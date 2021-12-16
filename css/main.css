@@ -65,6 +65,9 @@
   .section-full-mobile {
     width: 100%;
   }
+  .white-box-bg {
+    background-color: #ffffff;
+  }
 }
 
 .super {
@@ -82,10 +85,6 @@
 
 .all-terms {
   list-style-type: none;
-}
-
-.white-box-bg {
-  background-color: #ffffff;
 }
 
 @media (min-width: 767px) {
@@ -711,7 +710,6 @@ a {
 .hero-ribbon-content.hero-ribbon-content-alt {
   right: 60px;
   left: initial;
-  color: #ffffff;
   padding: 35px 95px 0;
 }
 
@@ -1096,6 +1094,12 @@ a {
     padding: 25px 20px 20px;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .gray-box-sm {
+    background-color: #ffffff;
   }
 }
 
