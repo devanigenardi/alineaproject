@@ -43,10 +43,11 @@
             width: 100%;
             padding: 40px 100px 70px;
             color: $blue;
-            background-image: url('../img/home_hero-temp.png');
+            background-image: url('../img/home_hero-temp.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center bottom;
+            position: relative;
             @media (max-width: 1023px) {
                 padding: 80px 50px 70px;
                 height: 100vh;
@@ -54,11 +55,12 @@
             @media (max-width: 767px) {
                 padding: 40px 20px 70px;
                 height: 100vh;
-                background-image: url('../img/home_hero_m-temp.png');
+                background-image: url('../img/home_hero_m-temp.jpg');
                 background-size: cover;
             }
             div {
                 max-width: 688px;
+                position: relative;
                 @media (max-width: 767px) {
                     max-width: 70%;
                 }
@@ -111,6 +113,32 @@
                         line-height: 25px;
                         font-size: 18px;
                     }
+                }
+            }
+            &::before {
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-image: url('/img/pattern_DT_home.svg');
+                background-repeat: no-repeat;
+                @media (max-width: 767px) {
+                    background-image: url('/img/pattern_M_home.svg');
+                }
+            }
+            &::after {
+                content: '';
+                width: 100%;
+                height: 29%;
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                background-image: url('/img/flourish-home.svg');
+                background-repeat: no-repeat;
+                background-position: bottom;
+                @media (max-width: 767px) {
                 }
             }
         }
