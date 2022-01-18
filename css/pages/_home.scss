@@ -131,7 +131,7 @@
             &::after {
                 content: '';
                 width: 100%;
-                height: 30%;
+                height: 340px;
                 position: absolute;
                 bottom: -2px;
                 left: 0;
@@ -140,6 +140,7 @@
                 background-position: bottom;
                 background-size: 100%;
                 @media (max-width: 767px) {
+                    height: 140px;
                 }
             }
         }
