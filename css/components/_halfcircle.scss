@@ -51,6 +51,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        svg {
+          width: 75%!important;
+          height: 75%!important;
+        }
       }
       
       .icon-circle svg { transform: scale(.6); }

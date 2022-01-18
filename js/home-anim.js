@@ -2,16 +2,21 @@ var elem;
 var animData;
 
 elem=document.getElementById("uyb");
-animData={ container: elem, renderer: 'svg', loop: false, autoplay: false,	path: '../img/hm_benefits.json' };
+animData={ container: elem, renderer: 'svg', loop: false, autoplay: false,	path: '../img/global_checkCircle.json' };
 var oUyb=lottie.loadAnimation(animData);
 
 elem=document.getElementById("sup");
-animData={ container: elem, renderer: 'svg', loop: false, autoplay: false,	path: '../img/hm_setup.json' };
+animData={ container: elem, renderer: 'svg', loop: false, autoplay: true,	path: '../img/icon_debit_activatedCard.json' };
 var oSup=lottie.loadAnimation(animData);
 
 elem=document.getElementById("erp");
-animData={ container: elem, renderer: 'svg', loop: false, autoplay: false,	path: '../img/hm_rewards.json' };
+animData={ container: elem, renderer: 'svg', loop: false, autoplay: true,	path: '../img/global_headerFlourish_dt.json' };
 var oErp=lottie.loadAnimation(animData);
+
+elem=document.getElementById("erm");
+animData={ container: elem, renderer: 'svg', loop: false, autoplay: true,	path: '../img/global_headerFlourish_mobile.json' };
+var oErm=lottie.loadAnimation(animData);
+
 
 
 var bcDelay=0
@@ -25,9 +30,10 @@ function onChangeBenefitCategories(changes, observerBenefitCategories) {
   changes.forEach(function (change) {
     if (change.intersectionRatio >= 1) {
 	      console.log("visible")
-			setTimeout(function(){ oSup.play(); }, bcDelay);
+			setTimeout(function(){ oSup.play(); }, bcDelay + 500);
 			setTimeout(function(){ oUyb.play(); }, bcDelay + 500);
-			setTimeout(function(){ oErp.play(); }, bcDelay + 1000);
+			setTimeout(function(){ oErp.play(); }, bcDelay + 500);
+			setTimeout(function(){ oErm.play(); }, bcDelay + 500);
     } else {
 	      console.log("hidden")
     }
