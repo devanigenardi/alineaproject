@@ -6,7 +6,7 @@ animData={ container: elem, renderer: 'svg', loop: false, autoplay: false,	path:
 var oUyb=lottie.loadAnimation(animData);
 
 elem=document.getElementById("sup");
-animData={ container: elem, renderer: 'svg', loop: false, autoplay: true,	path: '../img/icon_debit_activatedCard.json' };
+animData={ container: elem, renderer: 'svg', loop: true, autoplay: true,	path: '../img/icon_debit_activatedCard.json' };
 var oSup=lottie.loadAnimation(animData);
 
 elem=document.getElementById("erp");
