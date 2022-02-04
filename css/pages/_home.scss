@@ -67,11 +67,10 @@
             position: relative;
             @media (max-width: 1023px) {
                 padding: 80px 50px 70px;
-                height: 100vh;
             }
             @media (max-width: 767px) {
                 padding: 40px 20px 70px;
-                height: 100vh;
+                height: 106vh;
                 // background-image: url('../img/home_hero_m-temp.jpg');
                 background-size: cover;
             }
@@ -93,6 +92,14 @@
                     font-weight: normal;
                     margin: 40px 0 80px 0;
                     font-weight: 600;
+                    @media all and (min-width: 768px) {
+                        @media all and (max-height: 620px) {
+                            margin: 20px 0 20px 0;
+                            font-size: 40px;
+                            line-height: 40px;
+
+                        }
+                    }
                     @media (max-width: 767px) {
                         line-height: 23px;
                         font-size: 20px;
@@ -104,6 +111,19 @@
                         line-height: 95px;
                         margin-top: 10px;
                         display: block;
+
+                        @media (min-width: 768px) and (max-width: 1023px) {
+                            font-size: 10vw;
+                            line-height: 10vw;
+                        }
+
+                        @media all and (min-width: 768px) {
+                            @media all and (max-height: 620px) {
+                                font-size: 70px;
+                                line-height: 70px;
+                            }
+                        }
+                        
                         @media (max-width: 767px) {
                             line-height: 44px;
                             font-size: 40px;
@@ -126,9 +146,19 @@
                     width: 100%;
                     margin-top: 35px;
                     font-weight: normal;
+                    @media (min-width: 768px) and (max-width: 1023px) {
+                        max-width: 50vw;
+                    }
+                    @media all and (min-width: 768px) {
+                        @media all and (max-height: 620px) {
+                            line-height: 25px;
+                            font-size: 20px;
+                        }
+                    }
                     @media (max-width: 767px) {
                         line-height: 25px;
                         font-size: 18px;
+                        padding-right: 15%;
                     }
                 }
             }
@@ -144,6 +174,7 @@
                 background-repeat: no-repeat;
                 background-position: bottom;
                 background-size: 100%;
+                
                 @media (max-width: 767px) {
                     height: 190px;
                 }
